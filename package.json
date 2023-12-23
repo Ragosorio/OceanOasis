@@ -1,0 +1,26 @@
+{
+  "name": "oceanoasis",
+  "version": "1.0.0",
+  "description": "Api of OceanOasis",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ragosorio/OceanOasis.git"
+  },
+  "keywords": [
+    "ragosorio",
+    "api",
+    "animals",
+    "marine",
+    "JS"
+  ],
+  "author": " <ragosorio>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ragosorio/OceanOasis/issues"
+  },
+  "homepage": "https://github.com/Ragosorio/OceanOasis#readme"
+}
