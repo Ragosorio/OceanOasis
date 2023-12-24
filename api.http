@@ -1,0 +1,57 @@
+### Recuperar todas las pelis
+GET http://localhost:1234/animals
+
+### Recuperar todas las pelis por id
+GET http://localhost:1234/animals/72ce9751-55e8-4343-ad6e-1c2a301ad24a
+
+### Recuperar todas las pelis por un genero
+GET http://localhost:1234/animals?genre=mamífero
+
+### Crear una pelicula con POST
+POST http://localhost:1234/animals
+Content-Type: application/json
+
+{
+    "id": "23",
+    "name": "Nutria2",
+    "genre": [
+      "Mamífero",
+      "Vivíparo"
+    ],
+    "scientific_name": "Lontra canadensis",
+    "sex_determination": "Gonocorismo",
+    "habitat": "Ríos, lagos y zonas costeras",
+    "diet": "Peces, crustáceos, moluscos, y plantas acuáticas",
+    "average_lifespan": "10-15 años",
+    "conservation_status": "Preocupación Menor (LC)",
+    "geographic_range": "América del Norte, América Central y América del Sur",
+    "behavior": "Son conocidas por su juego y habilidades acuáticas",
+    "physical_characteristics": {
+      "size": "Alrededor de 0.6 a 1.3 metros de longitud",
+      "weight": "Aproximadamente 5-14 kg",
+      "color": "Pelaje marrón oscuro o negro"
+    },
+    "reproduction": {
+      "gestation_period": "Alrededor de 60-86 días",
+      "average_birth_size": "2-6 crías",
+      "reproductive_maturity": "2-3 años"
+    },
+    "interesting_facts": [
+      "Las nutrias tienen una capa densa de pelaje que las mantiene aisladas del agua fría.",
+      "Son animales sociales y a menudo forman grupos familiares.",
+      "Utilizan herramientas, como piedras, para romper conchas de moluscos."
+    ],
+    "image": "https://dam.ngenespanol.com/wp-content/uploads/2020/12/nutrias-tienen-piedra-favorita.jpg"
+}
+
+### Actualizar una peli
+PATCH http://localhost:1234/animals/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+Content-Type: application/json
+
+{
+    "id": "23",
+    "scientific_name": "FERRARIIII"
+}
+
+### Borrar una peli
+DELETE http://localhost:1234/animals/72ce9751-55e8-4343-ad6e-1c2a301ad24a

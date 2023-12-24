@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "Api of OceanOasis",
   "main": "app.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "node --watch app.js"
   },
   "repository": {
     "type": "git",
@@ -17,10 +18,16 @@
     "marine",
     "JS"
   ],
+  
   "author": " <ragosorio>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Ragosorio/OceanOasis/issues"
   },
-  "homepage": "https://github.com/Ragosorio/OceanOasis#readme"
+  "homepage": "https://github.com/Ragosorio/OceanOasis#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "4.18.2",
+    "zod": "^3.22.4"
+  }
 }
